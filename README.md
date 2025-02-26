@@ -1,50 +1,122 @@
-# Welcome to your Expo app 👋
+# iTransition Travel Companion 🌍✈️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A cross-platform mobile application designed to assist students and tourists traveling to foreign countries. Built with React Native and Expo, this app aims to simplify the travel experience by providing essential tools and information for travelers.
 
-## Get started
+## 🎯 Project Overview
 
-1. Install dependencies
+iTransition is a comprehensive travel companion that helps users:
+- Plan and organize their trips efficiently
+- Navigate foreign destinations with ease
+- Access essential travel information and resources
+- Connect with other travelers and local communities
 
-   ```bash
-   npm install
-   ```
+## 🚀 Getting Started
 
-2. Start the app
+### Prerequisites
 
-   ```bash
-    npx expo start
-   ```
+- Node.js (LTS version recommended)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (Mac only) or Android Studio Emulator
 
-In the output, you'll find options to open the app in a
+### Installation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/Walter254/iTransition.git
+cd iTransition
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the development server
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+### Running the App
 
-Join our community of developers creating universal apps.
+After starting the development server, you can run the app in:
+- iOS Simulator
+- Android Emulator
+- Physical device using Expo Go
+- Web browser
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+* Scan the QR code with the Expo Go app on your phone or use the iOS/Android simulator.
+
+## 🛠 Tech Stack
+
+- **Framework**: React Native
+- **Development Platform**: Expo
+- **Navigation**: Expo Router
+- **UI Components**: Native components + custom components
+- **State Management**: React Context API
+- **Testing**: Jest
+
+## 📱 Core Features
+
+### MVP - Itinerary Builder
+- Create and manage travel itineraries
+- Customize daily schedules
+- Save and share travel plans
+- Drag-and-drop interface for easy organization
+
+### Planned Features
+- Visa assistance and documentation
+- Travel booking integration
+- Language translation services
+- Currency conversion
+- Local information and recommendations
+- Emergency services information
+- Student-specific resources
+
+## 🔧 Development
+
+### Project Structure
+
+itransition/
+├── app/ # Main application code
+├── assets/ # Static assets
+├── components/ # Reusable components
+├── constants/ # App constants
+├── hooks/ # Custom React hooks
+├── services/ # API and external services
+└── types/ # TypeScript type definitions
+
+### Scripts
+
+``` bash
+npm start # Start development server
+npm run android # Run on Android emulator
+npm run ios # Run on iOS simulator
+npm run web # Run in web browser
+npm test # Run tests
+npm run lint # Run linter
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 📞 Support
+
+For support, please join our [Discord community](https://chat.expo.dev) or open an issue in the repository.
+
+## 🙏 Acknowledgments
+
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/)
+- All contributors and supporters of the project

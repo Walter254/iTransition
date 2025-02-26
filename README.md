@@ -81,13 +81,13 @@ After starting the development server, you can run the app in:
 ### Project Structure
 
 itransition/
-├── app/ # Main application code
-├── assets/ # Static assets
-├── components/ # Reusable components
-├── constants/ # App constants
-├── hooks/ # Custom React hooks
-├── services/ # API and external services
-└── types/ # TypeScript type definitions
+├── app/                 # Main application code
+├── assets/             # Static assets
+├── components/         # Reusable components
+├── constants/          # App constants
+├── hooks/              # Custom React hooks
+├── services/           # API and external services
+└── types/              # TypeScript type definitions
 
 ### Scripts
 

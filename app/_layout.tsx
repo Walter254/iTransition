@@ -14,7 +14,7 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
-        name="(tabs)/itinerary/index"
+        name="(tabs)/itinerary"
         options={{
           title: "Itineraries",
           tabBarIcon: ({ color, size }) => (

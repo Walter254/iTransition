@@ -16,12 +16,13 @@ export default function ItineraryList() {
         <Text style={styles.buttonText}>{isCreating ? "Cancel" : "Create New Itinerary"}</Text>
       </TouchableOpacity>
       
-      {isCreating && <CreateItinerary />} {/* Conditionally render the Create Itinerary component */}
-
-      {/* Itinerary list will go here */}
-      <View style={styles.emptyState}>
-        <Text>No itineraries yet. Create your first trip plan!</Text>
-      </View>
+      {isCreating ? (
+        <CreateItinerary />
+      ) : (
+        <View style={styles.emptyState}>
+          <Text>No itineraries yet. Create your first trip plan!</Text>
+        </View>
+      )}
     </View>
   );
 }

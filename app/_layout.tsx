@@ -23,15 +23,6 @@ export default function RootLayout() {
         }}
       />
       <Tabs.Screen
-        name="(tabs)/itinerary/create"
-        options={{
-          title: "Create Itinerary",
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="add" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="(tabs)/profile"
         options={{
           title: "Profile",

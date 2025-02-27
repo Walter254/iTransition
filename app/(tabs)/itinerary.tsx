@@ -1,15 +1,23 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-import { Link } from "expo-router";
+import { useState } from "react";
+import CreateItinerary from "../../components/create";
 
 export default function ItineraryList() {
+  const [isCreating, setIsCreating] = useState(false); // State to manage visibility of Create Itinerary
+
+  const handleCreateToggle = () => {
+    setIsCreating(!isCreating); // Toggle the create itinerary form
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>My Itineraries</Text>
-      <Link href="/itinerary/create" asChild>
-        <TouchableOpacity style={styles.createButton}>
-          <Text style={styles.buttonText}>Create New Itinerary</Text>
-        </TouchableOpacity>
-      </Link>
+      <TouchableOpacity style={styles.createButton} onPress={handleCreateToggle}>
+        <Text style={styles.buttonText}>{isCreating ? "Cancel" : "Create New Itinerary"}</Text>
+      </TouchableOpacity>
+      
+      {isCreating && <CreateItinerary />} {/* Conditionally render the Create Itinerary component */}
+
       {/* Itinerary list will go here */}
       <View style={styles.emptyState}>
         <Text>No itineraries yet. Create your first trip plan!</Text>

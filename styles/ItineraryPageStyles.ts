@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+const itineraryPageStyles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 16,
@@ -56,4 +56,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default styles; 
+export default itineraryPageStyles; 

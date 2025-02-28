@@ -59,6 +59,16 @@ After starting the development server, you can run the app in:
 - **State Management**: React Context API
 - **Testing**: Jest
 
+## Data Models & Mock Data
+
+The project uses the following data models:
+
+- **User Profile:** See `app/models/UserProfileSchema.md`
+- **Itinerary:** See `app/models/ItinerarySchema.md`
+- **University:** See `app/models/UniversitySchema.md`
+
+Mock data for development is stored in `app/mockData/`. This data simulates the real user journey for our MVP.
+
 ## 📱 Core Features
 
 ### MVP - Itinerary Builder

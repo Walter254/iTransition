@@ -1,12 +1,23 @@
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { useState } from "react";
-import CreateItinerary from "../../components/create";
+import { View, Text, TouchableOpacity } from "react-native";
+import { router } from "expo-router";
 
-export default function ItineraryList() {
+import CreateItinerary from "../components/CreateItinerary";
+import { Itinerary } from "../mockData/itineraries";  
+import { user } from "../mockData/user";
+import styles from "../../styles/ItineraryPageStyles"; // Import the styles
+
+export default function ItineraryPage() {
   const [isCreating, setIsCreating] = useState(false); // State to manage visibility of Create Itinerary
+  const [itineraries, setItineraries] = useState<Itinerary[]>([]); // State to manage itineraries
 
   const handleCreateToggle = () => {
     setIsCreating(!isCreating); // Toggle the create itinerary form
+  };
+
+  // Function to handle adding a new itinerary
+  const handleAddItinerary = (newItinerary: Itinerary) => {
+    setItineraries([...itineraries, newItinerary]); // Update itineraries state
   };
 
   return (
@@ -20,38 +31,24 @@ export default function ItineraryList() {
         <CreateItinerary />
       ) : (
         <View style={styles.emptyState}>
-          <Text>No itineraries yet. Create your first trip plan!</Text>
+          {user.itinerary.length > 0 ? (
+            user.itinerary.map((itinerary, index) => (
+              <View key={index} style={styles.itineraryItem}>
+                <Text style={styles.tripName}>{itinerary.tripName}</Text>
+                <Text style={styles.destination}>{itinerary.destination}</Text>
+                <Text style={styles.dates}>{`From: ${itinerary.startDate} To: ${itinerary.endDate}`}</Text>
+                <Text style={styles.flightInfo}>{`Airline: ${itinerary.details.flightInfo.airline}, Flight Number: ${itinerary.details.flightInfo.flightNumber}`}</Text>
+                <Text style={styles.remindersTitle}>Reminders:</Text>
+                {itinerary.details.reminders.map((reminder, reminderIndex) => (
+                  <Text key={reminderIndex} style={styles.reminder}>{`- ${reminder}`}</Text>
+                ))}
+              </View>
+            ))
+          ) : (
+            <Text>No itineraries yet. Create your first trip plan!</Text>
+          )}
         </View>
       )}
     </View>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 16,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 16,
-  },
-  createButton: {
-    backgroundColor: "#007AFF",
-    padding: 16,
-    borderRadius: 8,
-    alignItems: "center",
-    marginBottom: 16,
-  },
-  buttonText: {
-    color: "white",
-    fontSize: 16,
-    fontWeight: "600",
-  },
-  emptyState: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-}); 
+} 

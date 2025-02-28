@@ -1,27 +1,17 @@
-import { View, Text, StyleSheet } from "react-native";
+import React from "react";
+import { View, Text } from "react-native";
+import { user } from "../mockData/user"; // Import the user data
+import ProfileInfo from "../components/ProfileInfo";
+import styles from "../../styles/ProfileStyles"; // Import the styles
 
-export default function Profile() {
+const ProfilePage = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>User Profile</Text>
       <Text style={styles.subtitle}>Manage your account settings here.</Text>
+      <ProfileInfo user={user} /> {/* Pass user as a prop */}
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    padding: 16,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: "bold",
-  },
-  subtitle: {
-    fontSize: 16,
-    marginTop: 8,
-  },
-}); 
+export default ProfilePage; 

@@ -1,4 +1,3 @@
-// app/mockData/user.ts
 
 import { Itinerary } from "./itineraries";
 import { itineraries } from "./itineraries";

@@ -1,4 +1,3 @@
-// app/mockData/university.ts
 
 interface OrientationEvent {
   date: string;

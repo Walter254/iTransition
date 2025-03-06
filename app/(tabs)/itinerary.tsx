@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-import { router } from "expo-router";
+import { router } from "expo-router"; // not used yet
 
 import CreateItinerary from "../components/CreateItinerary";
 import { Itinerary } from "../mockData/itineraries";  
 import { user } from "../mockData/user";
-import itineraryPageStyles from "../../styles/ItineraryPageStyles"; // Import the styles
+import itineraryPageStyles from "../../styles/ItineraryPageStyles"; 
 
 export default function ItineraryPage() {
   const [isCreating, setIsCreating] = useState(false); // State to manage visibility of Create Itinerary

@@ -34,8 +34,8 @@ const CreateItinerary = () => {
         },
         accommodation,
         transportation,
-        packingList: packingList.split(",").map(item => item.trim()), // Convert to array
-        reminders: reminders.split(",").map(item => item.trim()), // Convert to array
+        packingList: packingList.split(",").map(item => item.trim()), 
+        reminders: reminders.split(",").map(item => item.trim()), 
         notes,
       },
     };

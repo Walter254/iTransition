@@ -1,5 +1,6 @@
 import { View, Text } from "react-native";
-import indexStyles from "../../styles/IndexStyles"; // Import the styles
+
+import indexStyles from "../../styles/IndexStyles";
 
 export default function Home() {
   return (

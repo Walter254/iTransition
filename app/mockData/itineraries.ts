@@ -1,4 +1,3 @@
-// app/mockData/itineraries.ts
 
 export interface Itinerary {
   id: string;

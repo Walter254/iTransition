@@ -75,6 +75,8 @@ After starting the development server, you can run the app in:
 ## 🔧 Development
 
 ### Project Structure
+
+```
 itransition/
 ├── app/ # Main application code
 ├── assets/ # Static assets
@@ -83,8 +85,11 @@ itransition/
 ├── hooks/ # Custom React hooks
 ├── services/ # API and external services
 └── types/ # TypeScript type definitions
+```
 
 ### Scripts
+
+```
 bash
 npm start # Start development server
 npm run android # Run on Android emulator
@@ -92,6 +97,7 @@ npm run ios # Run on iOS simulator
 npm run web # Run in web browser
 npm test # Run tests
 npm run lint # Run linter
+```
 
 ## 🤝 Contributing
 1. Fork the repository

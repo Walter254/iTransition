@@ -56,4 +56,4 @@ const itineraryPageStyles = StyleSheet.create({
   },
 });
 
-export default itineraryPageStyles; 
+export default itineraryPageStyles;

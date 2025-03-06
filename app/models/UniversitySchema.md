@@ -1,6 +1,7 @@
 # University Schema
 
 **Fields:**
+
 - **id**: Unique university identifier (string)
 - **name**: University name (string)
 - **location**: City, state (string)

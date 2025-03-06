@@ -26,7 +26,7 @@ const ProfileInfo: React.FC<ProfileInfoProps> = ({ user }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Profile Information</Text>
-      
+
       <View style={styles.infoSection}>
         <Text style={styles.label}>Name:</Text>
         <Text style={styles.value}>{user.name}</Text>

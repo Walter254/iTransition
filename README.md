@@ -110,7 +110,7 @@ npm run lint # Run linter
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 📞 Support
-For support, please join our [Discord community](https://chat.expo.dev) or open an issue in the repository.
+For support, please join expo [Discord community](https://chat.expo.dev) or open an issue in the repository.
 
 ## 🙏 Acknowledgments
 - [Expo Documentation](https://docs.expo.dev/)

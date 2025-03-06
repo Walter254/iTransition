@@ -94,6 +94,9 @@ itransition/
 ├── constants/ # App constants
 ├── hooks/ # Custom React hooks
 ├── services/ # API and external services
+├── models/ # Data models and schemas
+├── styles/ # Style definitions
+├── mockData/ # Sample data for testing
 └── types/ # TypeScript type definitions
 ```
 

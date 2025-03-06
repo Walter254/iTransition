@@ -2,9 +2,9 @@ import { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { router } from "expo-router"; // not used yet
 
-import CreateItinerary from "../components/CreateItinerary";
-import { Itinerary } from "../mockData/itineraries";
-import { user } from "../mockData/user";
+import CreateItinerary from "../../components/CreateItinerary";
+import { Itinerary } from "../../mockData/itineraries";
+import { user } from "../../mockData/user";
 import itineraryPageStyles from "../../styles/ItineraryPageStyles";
 
 export default function ItineraryPage() {

@@ -1,8 +1,8 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-import { user } from "../mockData/user";
-import ProfileInfo from "../components/ProfileInfo";
+import { user } from "../../mockData/user";
+import ProfileInfo from "../../components/ProfileInfo";
 import profileStyles from "../../styles/ProfileStyles";
 
 const ProfilePage = () => {

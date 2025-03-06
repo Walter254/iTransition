@@ -1,6 +1,7 @@
 # Itinerary Schema
 
 **Fields:**
+
 - **id**: Unique itinerary identifier (string)
 - **userId**: Reference to the user (string)
 - **tripName**: Name of the trip (string)

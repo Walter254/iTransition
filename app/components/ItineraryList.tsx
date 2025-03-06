@@ -13,7 +13,9 @@ const ItineraryList = () => {
           <View>
             <Text>{item.tripName}</Text>
             <Text>{item.destination}</Text>
-            <Text>{item.startDate} - {item.endDate}</Text>
+            <Text>
+              {item.startDate} - {item.endDate}
+            </Text>
           </View>
         )}
       />

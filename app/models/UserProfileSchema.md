@@ -1,6 +1,7 @@
 # User Profile Schema
 
 **Fields:**
+
 - **id**: Unique identifier (string)
 - **name**: Full name (string)
 - **country**: Country of origin (string)

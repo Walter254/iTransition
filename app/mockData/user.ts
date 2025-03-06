@@ -1,4 +1,3 @@
-
 import { Itinerary } from "./itineraries";
 import { itineraries } from "./itineraries";
 import { university } from "./university";
@@ -29,27 +28,27 @@ export const user: {
   timezone: string;
   season: string;
   packingList: string[];
-  itinerary: Itinerary[]; 
+  itinerary: Itinerary[];
 } = {
   id: "user-001",
   name: "Walter",
   country: "Kenya",
   scholarshipInfo: {
     provider: "XYZ Scholarship Foundation",
-    amount: "Full Tuition"
+    amount: "Full Tuition",
   },
   university: {
     id: "univ-001",
     name: "Tufts University",
     location: "Boston, MA",
-    campusMapURL: "https://campusmaps.tufts.edu/medford/"
+    campusMapURL: "https://campusmaps.tufts.edu/medford/",
   },
   contact: {
     email: "walter@example.com",
-    phone: "+254700000000"
+    phone: "+254700000000",
   },
   timezone: "Africa/Nairobi",
   season: "Spring",
-  packingList: university.packingList,              
-  itinerary: itineraries
+  packingList: university.packingList,
+  itinerary: itineraries,
 };

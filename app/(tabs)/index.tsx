@@ -9,4 +9,4 @@ export default function Home() {
       <Text style={indexStyles.subtitle}>Your travel companion app.</Text>
     </View>
   );
-} 
+}

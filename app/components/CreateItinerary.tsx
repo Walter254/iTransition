@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
-import { useRouter } from 'expo-router';
+import React, { useState } from "react";
+import { View, Text, TextInput, Button } from "react-native";
+import { useRouter } from "expo-router";
 
 const CreateItinerary = () => {
   const [tripName, setTripName] = useState("");
@@ -34,8 +34,8 @@ const CreateItinerary = () => {
         },
         accommodation,
         transportation,
-        packingList: packingList.split(",").map(item => item.trim()), 
-        reminders: reminders.split(",").map(item => item.trim()), 
+        packingList: packingList.split(",").map((item) => item.trim()),
+        reminders: reminders.split(",").map((item) => item.trim()),
         notes,
       },
     };
@@ -49,22 +49,70 @@ const CreateItinerary = () => {
     <View>
       <Text>Create Your Itinerary</Text>
       {/* Form Fields */}
-      <TextInput placeholder="Trip Name" value={tripName} onChangeText={setTripName} />
-      <TextInput placeholder="Destination" value={destination} onChangeText={setDestination} />
-      <TextInput placeholder="Start Date" value={startDate} onChangeText={setStartDate} />
-      <TextInput placeholder="End Date" value={endDate} onChangeText={setEndDate} />
-      <TextInput placeholder="Airline" value={airline} onChangeText={setAirline} />
-      <TextInput placeholder="Flight Number" value={flightNumber} onChangeText={setFlightNumber} />
-      <TextInput placeholder="Departure Time" value={departureTime} onChangeText={setDepartureTime} />
-      <TextInput placeholder="Accommodation Details" value={accommodation} onChangeText={setAccommodation} />
-      <TextInput placeholder="Transportation Arrangements" value={transportation} onChangeText={setTransportation} />
-      <TextInput placeholder="Packing List (comma-separated)" value={packingList} onChangeText={setPackingList} />
-      <TextInput placeholder="Reminders (comma-separated)" value={reminders} onChangeText={setReminders} />
-      <TextInput placeholder="Additional Notes" value={notes} onChangeText={setNotes} />
+      <TextInput
+        placeholder="Trip Name"
+        value={tripName}
+        onChangeText={setTripName}
+      />
+      <TextInput
+        placeholder="Destination"
+        value={destination}
+        onChangeText={setDestination}
+      />
+      <TextInput
+        placeholder="Start Date"
+        value={startDate}
+        onChangeText={setStartDate}
+      />
+      <TextInput
+        placeholder="End Date"
+        value={endDate}
+        onChangeText={setEndDate}
+      />
+      <TextInput
+        placeholder="Airline"
+        value={airline}
+        onChangeText={setAirline}
+      />
+      <TextInput
+        placeholder="Flight Number"
+        value={flightNumber}
+        onChangeText={setFlightNumber}
+      />
+      <TextInput
+        placeholder="Departure Time"
+        value={departureTime}
+        onChangeText={setDepartureTime}
+      />
+      <TextInput
+        placeholder="Accommodation Details"
+        value={accommodation}
+        onChangeText={setAccommodation}
+      />
+      <TextInput
+        placeholder="Transportation Arrangements"
+        value={transportation}
+        onChangeText={setTransportation}
+      />
+      <TextInput
+        placeholder="Packing List (comma-separated)"
+        value={packingList}
+        onChangeText={setPackingList}
+      />
+      <TextInput
+        placeholder="Reminders (comma-separated)"
+        value={reminders}
+        onChangeText={setReminders}
+      />
+      <TextInput
+        placeholder="Additional Notes"
+        value={notes}
+        onChangeText={setNotes}
+      />
       <Button title="Create Itinerary" onPress={handleCreate} />
       <Button title="Cancel" onPress={() => router.back()} />
     </View>
   );
 };
 
-export default CreateItinerary; 
+export default CreateItinerary;

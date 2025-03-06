@@ -17,4 +17,4 @@ const indexStyles = StyleSheet.create({
   },
 });
 
-export default indexStyles; 
+export default indexStyles;

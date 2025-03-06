@@ -17,4 +17,4 @@ const profileStyles = StyleSheet.create({
   },
 });
 
-export default profileStyles; 
+export default profileStyles;
